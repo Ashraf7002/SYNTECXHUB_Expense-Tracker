@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Expense Tracker</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header>
+  <h1>Smart Expense Tracker</h1>
+  <div class="header-actions">
+    <button id="themeToggle">🌙 Dark Mode</button>
+  </div>
+</header>
+
+<section class="summary">
+  <div class="card income">
+    <h3>Total Income</h3>
+    <p>₹0</p>
+  </div>
+  <div class="card expense">
+    <h3>Total Expense</h3>
+    <p>₹0</p>
+  </div>
+  <div class="card balance">
+    <h3>Balance</h3>
+    <p>₹0</p>
+  </div>
+</section>
+
+<section class="form-section">
+  <h2>Add Transaction</h2>
+  <form id="transactionForm">
+    <input type="number" id="amount" placeholder="Amount" required />
+    <select id="type">
+      <option value="Income">Income</option>
+      <option value="Expense">Expense</option>
+    </select>
+    <select id="category">
+      <option value="Food">Food</option>
+      <option value="Travel">Travel</option>
+      <option value="Rent">Rent</option>
+      <option value="Shopping">Shopping</option>
+    </select>
+    <input type="date" id="date" required />
+    <button type="submit">Add Transaction</button>
+  </form>
+</section>
+
+<section class="filter-section">
+  <h2>Filter Transactions</h2>
+  <div class="filter-box">
+    <select id="filterCategory">
+      <option value="All">All</option>
+      <option value="Food">Food</option>
+      <option value="Travel">Travel</option>
+      <option value="Rent">Rent</option>
+      <option value="Shopping">Shopping</option>
+    </select>
+    <input type="date" id="filterDate" />
+    <button id="filterBtn">Apply</button>
+  </div>
+</section>
+
+<section class="list-section">
+  <h2>Transaction History</h2>
+  <table id="transactionTable">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Category</th>
+        <th>Type</th>
+        <th>Amount</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</section>
+
+<section class="chart-section">
+  <h2>Income vs Expense</h2>
+  <canvas id="expenseChart"></canvas>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
