@@ -44,7 +44,7 @@ This project is built as part of my **Web Development Internship at Syntexchub**
 1. Clone the repository
 
 ```
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/Ashraf7002/SYNTECXHUB_Expense-Tracker
 ```
 
 2. Open the project folder
