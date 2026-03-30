@@ -73,18 +73,6 @@ git clone https://github.com/Ashraf7002/SYNTECXHUB_Expense-Tracker
 
 ---
 
-## 📸 Screenshots
-
-*(Add your project screenshots here)*
-
----
-
-## 🔗 Live Demo
-
-*(Add your deployed link here if available)*
-
----
-
 ## 🙌 Acknowledgement
 
 This project was completed as part of my internship at **Syntexchub**, where I gained hands-on experience in building real-world web applications.
